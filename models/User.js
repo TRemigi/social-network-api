@@ -1,5 +1,5 @@
+// import mongoose
 const { Schema, model } = require('mongoose');
-// const moment = require('moment');
 
 const UserSchema = new Schema({
     username: {
@@ -35,13 +35,13 @@ const UserSchema = new Schema({
     id: false
   });
 
-  // get total count of comments and replies on retrieval
+  // get total count of friends
   UserSchema.virtual('friendCount').get(function() {
     return this.friends.length;
   });
 
-// create the Pizza model using the PizzaSchema
-const User = model('User', PizzaSchema);
+// create the User model using the UserSchema
+const User = model('User', UserSchema);
 
-// export the Pizza model
+// export the User model
 module.exports = User;

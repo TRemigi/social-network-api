@@ -1,3 +1,4 @@
+// import then export models
 const User = require('./User');
 const Thought = require('./Thought');
 

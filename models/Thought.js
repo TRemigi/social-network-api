@@ -1,3 +1,4 @@
+// import mongoose and moment
 const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
 
@@ -53,13 +54,13 @@ const ThoughtSchema = new Schema({
     id: false
   });
 
-  // get total count of comments and replies on retrieval
+  // get total count of reactions
   ThoughtSchema.virtual('reactionCount').get(function() {
     return this.reactions.length;
   });
 
-// create the Pizza model using the PizzaSchema
+// create the Thought model from schema
 const Thought = model('Thought', ThoughtSchema);
 
-// export the Pizza model
+// export the Thought model
 module.exports = Thought;
