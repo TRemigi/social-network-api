@@ -2,7 +2,7 @@
 
 ## Description
 
-Social Network API utilized NoSQL (MongoDB) with Mongoose and Express.js to create an unstructured database to be used with a social media type front end.
+Social Network API utilized NoSQL (MongoDB) with Mongoose and Express.js to create an unstructured database to be used with a social media style front end.
 
 
 ## Table of Contents
